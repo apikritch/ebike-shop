@@ -1,0 +1,32 @@
+{
+    "products": [{
+        "name": "Conversion Kit",
+        "shortname" : "Conversion_Kit",
+        "name2": "26inch Front Wheel Conversion Kit",
+        "shortname2" : "26inch_Front_Wheel_Conversion_Kit",
+        "description" : "Made of nylon tire & alloy rim & stainless steel spoke that is super durable. Easy ride, refitted electric power, up to 100 kilometers duration. Powerful brushless gearless hub motor. Twist throttle has battery level and power-cut off. Perfect tool set that is  useful, helpful and so practical.",
+        "specification": ["Wheel Size: 26inch", "Voltage: 36V", "Power: 250W", "Max speed: 22mph", "Torque:35 N.M"],
+        "package": ["1 x Front Wheel", "1 x Controller", "1 x PAS", "2 x  Handle Brake", "1 x Controller Bag", "1 x Twist Throotle", "1 x Cable Tie Pack", "1 x Tie Pack", "1 x Installation Manual"],
+        "image": ["Conversion_Kit_01.jpg"]
+    },
+    {
+        "name": "Battery",
+        "shortname" : "Battery",
+        "name2": "Lithium Bottle Battery",
+        "shortname2" : "Lithium_Bottle_Battery",
+        "description" : "36V 10Ah 350W Bottle Lithium Li-oin E-bike Battery for Power Electric Bicycle",
+        "specification": ["Battery Type: BOTTLE Lithium-ion", "Rated Voltage / capacity: 36V / 10Ah", "Battery Size（mm): D90*H340mm", "Case Material: ABS+Aluminium alloy", "Battery Color: Sliver", "Cell quality: 18650-2000mAh", "Recommend to use: 200W-360W", "Discharge Standard current: 10A-13A", "Discharge Cut-off voltage: 30V", "Discharge cycle life: 800 times"],
+        "package": ["1 x Lithium Battery with Aluminum case"],
+        "image": ["Battery_01.jpg"]
+    },
+    {
+        "name": "Charger",
+        "shortname" : "Charger",
+        "name2": "Battery Charger",
+        "shortname2" : "Battery_Charger",
+        "description" : "42V 2A Power Charger DC Head for 36V 10Ah Lithium Bottle Battery Electric Bicycle",
+        "specification": ["Charge Cutoff Voltage (V): 42V", "Charge Mode: CC-CV", "Standard Charge Current (A): 2A", "Max Charge Current (A): 5A", "Gross Weight(with all parts and package): 0.4 kgs", "DC Specification：10mm*5.5mm*2.1mm"],
+        "package": ["1 x AU Plug DC head Charger (42V 2.0A)"],
+        "image": ["Charger_01.jpg"]
+    }]
+}

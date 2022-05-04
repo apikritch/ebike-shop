@@ -1,0 +1,19 @@
+{
+    "services": [{
+        "name": "Installation",
+        "shortname" : "Installation",
+        "name2": "Electric Bicycle System Installation",
+        "shortname2" : "Electric_Bicycle_System_Installation",
+        "description" : "",
+        "image": ["Installation_01.jpg"]
+
+    },
+    {
+        "name": "Repair",
+        "shortname" : "Repair",
+        "name2": "Bicycle Repairs & Maintenance",
+        "shortname2" : "Bicycle_Repairs_&_Maintenance",
+        "description" : "",
+        "image": ["Repair_01.jpg"]
+    }]
+}

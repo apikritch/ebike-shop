@@ -1,0 +1,27 @@
+{
+  "name": "d1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apikritch/D1.git"
+  },
+  "author": "Apikritch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apikritch/D1/issues"
+  },
+  "homepage": "https://github.com/apikritch/D1#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "http-errors": "^1.7.2",
+    "nodemon": "^2.0.16",
+    "pug": "^2.0.3"
+  }
+}

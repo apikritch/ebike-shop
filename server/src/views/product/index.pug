@@ -1,0 +1,20 @@
+extends ../layout/index
+block content
+  // Corousel
+  .corousel-button
+    img.d-block.w-100(src='/img/home/carousel.jpg' alt='...')
+  // All Product
+  .paragraph-space.grey-background
+    .container
+      .row
+        .col-lg-8
+          h1.head-space.phone-text-center All Products
+          each product in productslist
+            .row.img-space
+              .col-md-3.align-self-center
+                a(href=`/products/${product.shortname}`)
+                  img.round.image-all-product(src=`/img/home/${product.shortname}_01.jpg` alt='')
+              .col-md-9
+                h4.head-space=product.name2
+                p.paragraph-product.justify=product.description
+        include ../includes/gallery

@@ -1,0 +1,38 @@
+extends ../layout/index
+block content
+  //Corousel
+  .corousel-button
+    img.d-block.w-100(src='img/home/carousel.jpg' alt='...')
+  .paragraph-space.grey-background
+    .container
+      .row
+        .col-md-6
+          // Form
+          h1.head-space Contact Us
+
+          if error
+            .alert.alert-danger
+              | There was a error handling your request! Did you fill in all the fields?
+          else if success
+            .alert.alert-success
+              | Thank you for your feedback!
+
+          form(action='/contact', method='POST')
+            .form-group
+              label(for='name') Name
+              input#name.form-control(type='text', name='ctName', value=ctName)
+            .form-group
+              label(for='email') Email
+              input#email.form-control(type='email', placeholder='name@example.com', name='ctEmail', value=ctEmail)
+            .form-group
+              label(for='title') Title
+              input#title.form-control(type='text', name='ctTitle', value=ctTitle)
+            .form-group
+              label(for='message') Message
+              textarea#message.form-control(rows='3', name='ctMessage', value=ctMessage)
+            br
+            .text-center
+              button.read-more(type='submit') Submit
+        .col-md-6
+          iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787.9541662654786!2d144.96510032919602!3d-37.817763039308595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b40c1fa713%3A0x32ab1bbfb417a206!2s9+Degraves+St%2C+Melbourne+VIC+3000!5e0!3m2!1sth!2sau!4v1552901572956' frameborder='0' style='border:0' allowfullscreen='')
+

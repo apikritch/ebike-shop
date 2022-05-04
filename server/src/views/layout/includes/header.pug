@@ -1,0 +1,32 @@
+//Navbar
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  .container
+    a.navbar-brand(href='/') Bike
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='/')
+            | Home 
+            span.sr-only (current)
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Products
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='/products') All Products
+            .dropdown-divider
+            each product in productNames
+              a.dropdown-item(href=`/products/${product.shortname}`)=product.name
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Services
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='/services') All services
+            .dropdown-divider
+            each service in serviceNames
+              a.dropdown-item(href=`/services/${service.shortname}`)=service.name
+        li.nav-item
+          a.nav-link(href='/contact') Contact Us
+        li.nav-item
+            a.nav-link(onclick="swapStyleSheet('css/style2.css')") Blue
+        li.nav-item
+            a.nav-link(onclick="swapStyleSheet('css/style.css')") Orange

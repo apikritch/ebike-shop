@@ -1,0 +1,4 @@
+docker-compose.yml
+server/node_modules
+server/website
+server/Dockerfile

@@ -1,0 +1,53 @@
+extends layout/index
+block content
+  // Corousel
+  .corousel-button
+    img.d-block.w-100(src='img/home/carousel.jpg' alt='...')
+    .wrap-text.text-center
+      h1 WE 
+      h1.orange POWER UP
+      h1  YOUR BIKE
+    .wrap-button.text-center
+      button#product-button.btn.button(type='button') Our Products
+      button#service-button.btn.button(type='button') Our Services
+  // Our Product
+  .grey-background
+    .container
+      // Product Details
+      #product-hide.hide.paragraph-space
+        h1.text-center.head-space Our Products
+        hr
+        .row
+          each product in productslist
+            .col-md-4
+              .text-center
+                h3.head-space=product.name
+                img.round.img-space-card.image-home-product-part(src=`./img/home/${product.shortname}_01.jpg` alt='')
+                br
+                a.read-more(href=`/products/${product.shortname}`) Read more
+            
+      // Service Details
+      #service-hide.hide.paragraph-space
+        h1.text-center.head-space.head-space2 Our Services
+        hr
+        .row
+          each service in serviceslist
+            .col-md-6
+              .text-center
+                h3.head-space=service.name
+                img.round.img-space-card.image-home-product-part(src=`img/home/${service.shortname}_01.jpg` alt='')
+                br
+                a.read-more(href=`/services/${service.shortname}`) Read more
+  // About Us
+  .orange-background.paragraph-space
+    .container
+      h1.text-center.head-space About Us
+      p.justify
+        | Cras volutpat tortor ante, et iaculis ex tincidunt vitae. Ut dapibus augue a lacus porta, imperdiet consectetur   nulla mollis. Cras tincidunt velit placerat, consequat mauris a, porttitor magna. In in tristique sapien, a   laoreet nisl. Nam rutrum fringilla ex. Pellentesque a laoreet purus. Nulla consequat dui lectus, non sodales elit   vestibulum non.
+  //Recently Viewed Item
+  .grey-background.paragraph-space
+    .container
+      h1.text-center.head-space Your Recently Viewed Item
+      .row.justify-content-md-center
+        each thumb in image
+          img.col-md-auto.rounded-home(src=`/img/gallery/${thumb}` alt='')

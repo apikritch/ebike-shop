@@ -1,0 +1,20 @@
+extends ../layout/index
+block content
+  // Corousel
+  .corousel-button
+    img.d-block.w-100(src='img/home/carousel.jpg' alt='...')
+  // All Service
+  .paragraph-space.grey-background
+    .container
+      .row
+        .col-lg-8
+          h1.head-space.phone-text-center All Services
+          each service in serviceslist
+            .row.img-space
+              .col-md-3.align-self-center
+                a(href=`/services/${service.shortname}`)
+                  img.round.image-all-product(src=`./img/home/${service.shortname}_01.jpg` alt='')
+              .col-md-9
+                h4.head-space=service.name2
+                p.paragraph-product.justify=service.description
+        include ../includes/gallery
