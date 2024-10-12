@@ -44,12 +44,17 @@ if (app.get("env") === "development") {
 
 //Access public assests
 app.use(express.static("public"));
+// app.use('/project/5', express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Create middleware to load the data every time a request is made to the server
 app.use(async (req, res, next) => {
   try {
+    const host = req.get('host');
+    const baseUrl = `https://${host}/project/5`;
+    res.locals.baseUrl = baseUrl;
+
     //Load names
     const names = await productService.getNames();
     //Pass the productName back in the response
@@ -66,7 +71,7 @@ app.use(async (req, res, next) => {
 
 //Use routes module
 app.use(
-  "/",
+  "/project/5",
   routes({
     productService: productService,
     contactService: contactService,
